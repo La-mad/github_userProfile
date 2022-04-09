@@ -1,0 +1,50 @@
+:root {
+    --primary-color: #002cf6;
+    --dark-color: #15120f;
+    --accent-color: #615d5a;
+    --light-color: #bdcabc;
+    --secondary-color: #f2f4f6;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html {
+    
+    font-family: "Noto Sans", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 1.5rem;
+    background-image: linear-gradient(90deg, var(--secondary-color) 50%, var(--primary-color) 50%);
+ }
+
+.cards {
+    position: relative;
+    top: 20vh;
+}
+
+.card {
+    width: 60%;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0.2rem 0.2rem 0.5rem 0.2rem var(--accent-color);
+}
+
+.upper__card {
+    margin-bottom: 3.5rem;
+}
+
+.user__picture {
+    background: var(--light-color);
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;   
+}
