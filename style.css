@@ -30,7 +30,7 @@ body {
 .cards {
     position: relative;
     width: 60%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 0 auto;
     padding-top: 17rem;
 
@@ -56,16 +56,17 @@ body {
     
 }
 
-.card > * {
-    border: 1px solid yellow;
-}
+
 
 .card__avatar {
-    background: var(--light-color);
+   flex-shrink: 0;
+}
+
+.card__avatar--img{
+    overflow: hidden;
     width: 7rem;
     height: 7rem;
-    border-radius: 50%;   
-    flex-shrink: 0;
+    border-radius: 50%; 
 }
 
 .card__infobox {
@@ -74,7 +75,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 1rem
+    flex-basis: 50rem;
+
+    /* gap: 1rem */
 }
 
 .card__statistics {
@@ -82,5 +85,30 @@ body {
     justify-content: space-between;
 }
 
+.btn__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+}
+
+.btn {
+    padding: 1rem 1.5rem;
+    margin: .5rem;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: normal;
+    outline: none;
+    border: none;
+    border-radius: .5rem;
+    
+    
+}
+
+.btn__edit {
+    
+    background-color: var(--primary-color);
+    color: white;
+}
 
 
