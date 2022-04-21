@@ -64,7 +64,8 @@ body {
    flex-shrink: 0;
    position: relative;
    display: flex;
-   justify-content: end;
+   /* justify-content: end; */
+   align-self: start;
 }
 
 .card__avatar--img{
@@ -79,9 +80,9 @@ body {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     width: 2rem;
-    margin: 6rem 1rem 0 0;
+    bottom: 0.3rem;
+    right: 0.3rem;
     text-align: center;
-    
     border-radius: 100%;
     box-sizing: content-box;
 }
@@ -112,7 +113,7 @@ body {
 }
 
 .btn {
-    padding: 1rem 1.5rem;
+    padding: .5rem;
     margin: .5rem;
     cursor: pointer;
     font-family: inherit;
@@ -124,10 +125,31 @@ body {
     
 }
 
+
 .btn__edit {
     
     background-color: var(--primary-color);
     color: white;
+    border: 1px solid var(--primary-color);
 }
 
+.btn__edit:hover,
+.btn__edit:focus{
+    background: var(--secondary-color);
+    color: var(--dark-color);
+    border: 1px solid var(--primary-color);
+}
+
+.btn__ellipsis {
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+    border: 1px solid var(--secondary-color);
+}
+
+.btn__ellipsis:hover,
+.btn__ellipsis:focus{
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color)
+}
 
